@@ -1,0 +1,13 @@
+#Install Strands using pip:
+pip install strands-agents strands-agents-tools
+
+from strands import Agent
+
+# Initialize your agent
+agent = Agent(
+    system_prompt="You are a helpful assistant that provides concise responses."
+)
+
+# Send a message to the agent
+response = agent("Hello! What can you do?")
+print(response)
